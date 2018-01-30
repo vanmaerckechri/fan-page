@@ -1,0 +1,31 @@
+@import "variables";
+@media (max-width: 991px)
+{
+	.nav-link
+	{
+		text-align: center;
+	}
+}
+@media (max-width: 590px)
+{
+	footer
+	{
+		justify-content: space-around;
+		p
+		{
+			line-height: 40px;
+		}
+		ul
+		{
+			justify-content: space-around;
+			&:nth-child(2)/*Terms Privacy Press*/
+			{
+				margin: 0;
+			}
+			li
+			{
+				margin: 10px;
+			}
+		}
+	}
+}
