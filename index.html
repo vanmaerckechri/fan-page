@@ -159,8 +159,26 @@
     	<div id="goodies">
     		<h2>Goodies</h2>
     	</div>
-    	<div id="contact">
+    	<div id="contact" class="container">
     		<h2>Contact</h2>
+            <form class="col-xs-12">
+            <label for="prenom">Prénom : </label>
+            <input id="prenom" type="text" class="form-control">
+            <label for="nom">Nom : </label>
+            <input id="nom" type="text" class="form-control">
+            <label for="mail">Mail : </label>
+            <input id="mail" type="email" class="form-control">
+            <label for="select">Thème : </label>
+            <select id="select" class="form-control">
+                <option>Thème 1</option>
+                <option>Thème 2</option>
+                <option>Thème 3</option>
+            </select>
+            <label for="textarea">Textarea : </label>
+            <textarea id="textarea" type="textarea" class="form-control"></textarea>
+            <br>
+            <button><span class="glyphicon glyphicon-upload"></span> Envoyer</button>
+        </form>
     	</div>
     </div>
     <footer>
