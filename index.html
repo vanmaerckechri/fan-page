@@ -158,41 +158,46 @@
     	</div>
     	<div id="photographies">
     		<h2>Photographies</h2>
+            <div id="carousel">
+                <button id="previous">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <img id="carousel_img" src="./assets/img/01.jpg" alt="Photographies de Wonder Woman">
+                <button id="next">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <p id="carouselPosition"></p>
     	</div>
     	<div id="goodies">
     		<h2>Goodies</h2>
     	</div>
-    	<div id="contact" class="container">
-    		<h2>Contact</h2>
-            <form class="col-xs-12">
-            <label for="prenom">Prénom : </label>
-            <input id="prenom" type="text" class="form-control">
-            <label for="nom">Nom : </label>
-            <input id="nom" type="text" class="form-control">
-            <label for="mail">Mail : </label>
-            <input id="mail" type="email" class="form-control">
-            <label for="select">Thème : </label>
-            <select id="select" class="form-control">
-                <option>Thème 1</option>
-                <option>Thème 2</option>
-                <option>Thème 3</option>
-            </select>
-            <label for="textarea">Textarea : </label>
-            <textarea id="textarea" type="textarea" class="form-control"></textarea>
-            <br>
-            <button><span class="glyphicon glyphicon-upload"></span> Envoyer</button>
-        </form>
+    	<div id="contact" class="container-fluid">
+            <div class="row">
+        		<h2>Contact</h2>
+                <form class="col-sm-12">
+                    <label for="prenom">Prénom : </label>
+                    <input id="prenom" type="text" class="form-control">
+                    <label for="nom">Nom : </label>
+                    <input id="nom" type="text" class="form-control">
+                    <label for="mail">Mail : </label>
+                    <input id="mail" type="email" class="form-control">
+                    <label for="select">Thème : </label>
+                    <select id="select" class="form-control">
+                        <option>Thème 1</option>
+                        <option>Thème 2</option>
+                        <option>Thème 3</option>
+                    </select>
+                    <label for="textarea">Textarea : </label>
+                    <textarea id="textarea" type="textarea" class="form-control"></textarea>
+                    <br>
+                    <button><span class="glyphicon glyphicon-upload"></span> Envoyer</button>
+                </form>
+            </div>
     	</div>
     </div>
     <footer>
         <p>&copy;2018 Marinococotophe, Inc</p>
-       	<!-- au besoin... sinon poubelle
-        <ul>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Press</a></li>
-        </ul>
-    	-->
         <ul>
             <li><a href="" target="_blank" rel="noopener" title="mail">Marine</a></li>
             <li><a href="" target="_blank" rel="noopener" title="facebook">Corentin</a></li>
@@ -204,5 +209,6 @@
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 </html>

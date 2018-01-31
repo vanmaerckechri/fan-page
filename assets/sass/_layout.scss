@@ -9,6 +9,34 @@ nav ul
 {
 	margin-left: 30px;
 }
+//photographies
+#photographies
+{
+	#carouselPosition
+	{
+		margin-top: 10px;
+		text-align: center;
+		width: 100%;
+	}
+	#carousel
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		#carousel_img
+		{
+			max-width: 80%;
+			height: 450px;
+			object-fit: cover;
+		}
+		#previous, #next
+		{
+			border-radius: 50%;
+			width: 33px;
+			height: 33px;
+		}
+	}
+}
 //footer...
 footer
 {

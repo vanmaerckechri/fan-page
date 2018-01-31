@@ -25,6 +25,9 @@ nav {
   margin: 0 auto;
   max-width: 960px; }
 
+footer {
+  margin-top: 10px; }
+
 #main {
   margin: 0 auto;
   max-width: 960px;
@@ -50,6 +53,23 @@ nav ul {
 
 .alinea {
   margin-left: 30px; }
+
+#photographies #carouselPosition {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%; }
+#photographies #carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #photographies #carousel #carousel_img {
+    max-width: 80%;
+    height: 450px;
+    object-fit: cover; }
+  #photographies #carousel #previous, #photographies #carousel #next {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px; }
 
 footer {
   padding-left: 30px;
