@@ -1,4 +1,10 @@
 @import "variables";
+//nav
+nav ul
+{
+	margin-left: auto;
+}
+
 //footer...
 footer
 {
@@ -16,11 +22,6 @@ footer
 	}
 	ul
 	{
-		&:nth-child(2)/*Terms Privacy Press*/
-		{
-			margin-left: auto;
-			margin-right: 40px;
-		}
 		display: flex;
 		align-items: baseline;
 		flex-wrap: wrap;

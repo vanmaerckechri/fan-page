@@ -14,13 +14,46 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1220px;
+  width: 100%;
   min-height: 100vh;
   background-color: pink; }
 
+header {
+  background-color: white; }
+
+nav {
+  margin: 0 auto;
+  max-width: 960px; }
+
 #main {
-  flex: 1;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 960px;
+  flex: 1; }
+
+H1 {
+  font-weight: 600; }
+
+H2 {
+  margin: 1.8em 0 1.6em;
+  font-size: 1.3em;
+  font-weight: 600; }
+
+H3 {
+  margin: 1.6em 0 1em;
+  font-size: 1.2em; }
+
+blockquote {
+  margin-left: 1.6em; }
+
+cite {
+  font-size: 0.8em;
+  font-style: italic; }
+
+p, cite, a, ul {
+  margin-left: 30px; }
+
+nav ul {
+  margin-left: auto; }
 
 footer {
   padding-left: 30px;
@@ -38,9 +71,6 @@ footer {
     align-items: baseline;
     flex-wrap: wrap;
     list-style: none; }
-    footer ul:nth-child(2) {
-      margin-left: auto;
-      margin-right: 40px; }
     footer ul li {
       margin-left: 20px; }
       footer ul li a {
