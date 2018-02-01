@@ -118,11 +118,6 @@ footer {
           footer ul li a img:hover {
             opacity: 1; }
 
-.push-right {
-  padding: 0;
-  width: 100%;
-  text-align: right; }
-
 .nav-tabs {
   border-bottom: none; }
 
@@ -146,9 +141,6 @@ footer {
   border-bottom: 1px solid pink;
   color: black;
   background-color: pink; }
-
-input::-moz-focus-inner {
-  border: 0; }
 
 @media (max-width: 991px) {
   .nav-link {
