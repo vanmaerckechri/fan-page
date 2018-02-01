@@ -43,7 +43,7 @@ nav ul
 	#carousel
 	{
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		#carousel_img
 		{
@@ -56,6 +56,18 @@ nav ul
 			border-radius: 50%;
 			width: 33px;
 			height: 33px;
+			background-color: transparent;
+			font-size: 1.5em;
+			border: none;
+			&:hover
+			{
+				color: red;
+			}
+			&:focus
+			{
+				outline: none;
+				box-shadow: none;
+			}
 		}
 	}
 }

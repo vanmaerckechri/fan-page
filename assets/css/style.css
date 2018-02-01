@@ -76,7 +76,7 @@ nav ul {
   width: 100%; }
 #photographies #carousel {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
   #photographies #carousel #carousel_img {
     max-width: 80%;
@@ -85,7 +85,15 @@ nav ul {
   #photographies #carousel #previous, #photographies #carousel #next {
     border-radius: 50%;
     width: 33px;
-    height: 33px; }
+    height: 33px;
+    background-color: transparent;
+    font-size: 1.5em;
+    border: none; }
+    #photographies #carousel #previous:hover, #photographies #carousel #next:hover {
+      color: red; }
+    #photographies #carousel #previous:focus, #photographies #carousel #next:focus {
+      outline: none;
+      box-shadow: none; }
 
 footer {
   padding-left: 30px;
