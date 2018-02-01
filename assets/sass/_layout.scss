@@ -5,9 +5,25 @@ nav ul
 	margin-left: auto;
 }
 //main
+#main
+{
+	text-align: justify;
+	p::first-letter
+	{
+		border: 1px solid rgba(0, 0, 0, .2);
+		padding: 3px;
+		font-size: 1.5em;
+		background-color: rgba(0, 0, 0, .1);
+	}
+	div
+	{
+		margin-top: 1em;
+	}
+}
 .alinea
 {
 	margin-left: 30px;
+	margin-right: 30px;
 }
 //photographies
 #photographies
@@ -89,4 +105,34 @@ footer
 			}
 		}
 	}
+}
+//modules
+.push-right
+{
+	padding: 0;
+	width: 100%;
+	text-align: right;
+}
+.nav-tabs
+{
+	border-bottom: none;
+}
+.btn
+{
+	border-radius: 8px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border: 2px solid pink;
+	background-color: black;
+}
+.btn-primary a
+{
+	color: inherit;
+}
+.activeOnglet
+{
+	border: 1px solid black;
+	border-bottom: 1px solid pink;
+	color: black;
+	background-color: pink;
 }
