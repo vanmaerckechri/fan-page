@@ -76,7 +76,7 @@ nav ul {
   width: 100%; }
 #photographies #carousel {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
   #photographies #carousel #carousel_img {
     max-width: 80%;
