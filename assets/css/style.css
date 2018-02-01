@@ -19,7 +19,7 @@ body {
   background-color: pink; }
 
 header {
-  background-color: white; }
+  background-color: #F8F9FA; }
 
 nav {
   margin: 0 auto;
@@ -42,10 +42,11 @@ H2 {
   font-weight: 600; }
 
 H3 {
-  margin: 1.6em 0 1em;
+  margin-bottom: 1em;
   font-size: 1.2em; }
 
 small {
+  margin-top: 5px;
   display: inline-block; }
 
 nav ul {
@@ -54,6 +55,10 @@ nav ul {
 .alinea {
   margin-left: 30px; }
 
+#photographies img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover; }
 #photographies #carouselPosition {
   margin-top: 10px;
   text-align: center;

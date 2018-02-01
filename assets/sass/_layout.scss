@@ -12,6 +12,12 @@ nav ul
 //photographies
 #photographies
 {
+	img
+	{
+		max-width: 100%;
+		display: block;
+		object-fit: cover;
+	}
 	#carouselPosition
 	{
 		margin-top: 10px;
