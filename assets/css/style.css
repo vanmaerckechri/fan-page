@@ -127,20 +127,28 @@ footer {
   border-bottom: none; }
 
 .btn {
+  outline: 0;
+  margin-left: 2px;
   border-radius: 8px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  border: 2px solid pink;
-  background-color: black; }
-
-.btn-primary a {
-  color: inherit; }
+  background-color: black;
+  display: inline-block;
+  color: white; }
+  .btn:hover {
+    border: 1px solid black;
+    border-bottom: 1px solid pink;
+    color: black;
+    background-color: pink; }
 
 .activeOnglet {
   border: 1px solid black;
   border-bottom: 1px solid pink;
   color: black;
   background-color: pink; }
+
+input::-moz-focus-inner {
+  border: 0; }
 
 @media (max-width: 991px) {
   .nav-link {

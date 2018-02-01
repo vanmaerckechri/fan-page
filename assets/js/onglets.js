@@ -1,4 +1,4 @@
-var navigationLinks = document.querySelectorAll('.onglets li');
+var navigationLinks = document.querySelectorAll('.onglets li a');
 
 function activeDisplayActiveOnglet(cible)
 {
