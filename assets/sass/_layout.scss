@@ -128,6 +128,11 @@ footer
 		color: black;
 		background-color: pink;
 	}
+	&:focus
+	{
+		outline: none;
+		box-shadow: none;
+	}
 }
 .activeOnglet
 {

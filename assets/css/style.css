@@ -135,6 +135,9 @@ footer {
     border-bottom: 1px solid pink;
     color: black;
     background-color: pink; }
+  .btn:focus {
+    outline: none;
+    box-shadow: none; }
 
 .activeOnglet {
   border: 1px solid black;
