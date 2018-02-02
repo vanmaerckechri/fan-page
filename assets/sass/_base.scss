@@ -12,12 +12,9 @@ body
 }
 header
 {
+	transition: opacity 1s;
 	background-color: #F8F9FA;
-}
-nav
-{
-	margin: 0 auto;
-	max-width: 960px;
+	z-index: 10;
 }
 footer
 {
@@ -25,9 +22,7 @@ footer
 }
 #main
 {
-	margin: 0 auto;
-	max-width: 960px;
-	flex: 1;
+	color: white;
 }
 H1
 {
