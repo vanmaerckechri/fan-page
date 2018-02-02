@@ -17,8 +17,8 @@ window.mainFocus.addEventListener('scroll', changeDisplayNav);
 
 function changeDisplayNav()
 {	
-	let screenHeight = screen.height;
-	let heightEvent = screenHeight / 2;
+	let windowHeight = window.innerHeight;
+	let heightEvent = windowHeight / 2;
 	if (window.mainFocus.scrollTop > heightEvent)
 	{
 		headerFocus.style.opacity = "0";
