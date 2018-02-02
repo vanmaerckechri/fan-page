@@ -4,6 +4,7 @@ nav
 {
 	margin: 0 auto;
 	max-width: 960px;
+	z-index: 10;
 	ul
 	{
 		margin-left: auto;
@@ -15,10 +16,10 @@ nav
 	text-align: justify;
 	p::first-letter
 	{
-		border: 1px solid rgba(0, 0, 0, .2);
+		border: 1px solid rgba(255, 255, 255, .2);
 		padding: 3px;
 		font-size: 1.5em;
-		background-color: rgba(0, 0, 0, .1);
+		background-color: rgba(255, 255, 255, .1);
 	}
 }
 .alinea
@@ -79,15 +80,21 @@ nav
 }
 //footer...
 footer
-{
+{ 
 	padding-left: 30px;
 	padding-right: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	min-height: 57px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: rgb(248, 243, 233);
+	transition: bottom 1s;
+
 	p
 	{
 		color: $footer-color;
@@ -163,7 +170,6 @@ footer
 	top: 100%;
 	left: 0;
 	right: 0;
-	min-height: 2000px;
 	z-index: 2;
 }
 .parallax__layer__0
@@ -201,7 +207,7 @@ footer
 }
 .btn
 {  
-	outline: 0;
+	margin-bottom: 1em;
 	margin-left: 2px;
 	border-radius: 8px;
 	border-bottom-right-radius: 0px;
@@ -236,7 +242,7 @@ footer
 	border-radius: 50%;
 	position: fixed;
 	bottom: 60px;
-	right: 60px;
+	right: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -247,7 +253,7 @@ footer
 	z-index: 100;
 	text-decoration: none;
 	user-select : none;
-	transition: opacity 1s;
+	transition: all 1s;
 	&:hover
 	{	
 		border: 2px solid black;
@@ -261,4 +267,9 @@ footer
 		outline: none;
 		box-shadow: none;
 	}
+}
+//contact
+#contact
+{
+	margin-bottom: 75px;
 }

@@ -4,6 +4,9 @@ var mainFocus = document.querySelector('#main');
 // var return top
 var returnToTopContainer;
 var returnToTopElement;
+// var footer
+var footerFocus = document.querySelector('footer');
+var contactFocus = document.querySelector('#contact');
 // create and insert return top
 returnToTopContainer = document.createElement("button");
 returnToTopContainer.className = 'button_return';
@@ -14,17 +17,23 @@ document.body.appendChild(returnToTopContainer);
 returnToTopContainer.classList.add('button_return');
 
 window.mainFocus.addEventListener('scroll', changeDisplayNav);
+window.addEventListener("resize", changeDisplayNav);
 
-function changeDisplayNav()
+function changeDisplayNav(first)
 {	
 	let windowHeight = window.innerHeight;
-	let heightEvent = windowHeight / 2;
-	if (window.mainFocus.scrollTop > heightEvent)
+	let heightNavEvent = windowHeight / 2;
+	let heightTotal = mainFocus.scrollHeight;
+	let positionScrollNow = window.mainFocus.scrollTop;
+	let footerBounding = footerFocus.getBoundingClientRect();
+
+	if (positionScrollNow > heightNavEvent)
 	{
 		headerFocus.style.opacity = "0";
 		headerFocus.style.pointerEvents = "none";
 		returnToTopContainer.style.opacity = "1";
 		returnToTopContainer.style.pointerEvents = "auto";
+		returnToTopContainer.style.bottom = "25px";
 	}
 	else
 	{
@@ -32,6 +41,16 @@ function changeDisplayNav()
 		headerFocus.style.pointerEvents = "auto";
 		returnToTopContainer.style.opacity = "0";
 		returnToTopContainer.style.pointerEvents = "none";	
+	}
+	if (positionScrollNow + windowHeight == heightTotal)
+	{
+		footerFocus.style.bottom = "0";
+		contactFocus.style.marginBottom = footerBounding.height+4+"px";
+		returnToTopContainer.style.bottom = footerBounding.height+4+"px";
+	}
+	else
+	{
+		footerFocus.style.bottom = -1*footerBounding.height+"px";
 	}
 }
 // smooth scroll

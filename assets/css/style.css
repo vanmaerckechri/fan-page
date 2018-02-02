@@ -11,20 +11,13 @@ html, body, header, nav, footer, section, div, span, h1, h2, h3, p, a, blockquot
 body {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
   background-color: pink; }
 
 header {
   transition: opacity 1s;
   background-color: #F8F9FA;
   z-index: 10; }
-
-footer {
-  margin-top: 10px; }
 
 #main {
   color: white; }
@@ -47,17 +40,18 @@ small {
 
 nav {
   margin: 0 auto;
-  max-width: 960px; }
+  max-width: 960px;
+  z-index: 10; }
   nav ul {
     margin-left: auto; }
 
 #main {
   text-align: justify; }
   #main p::first-letter {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 3px;
     font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .alinea {
   margin-left: 30px;
@@ -99,12 +93,17 @@ nav {
 footer {
   padding-left: 30px;
   padding-right: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   min-height: 57px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #f8f3e9; }
+  background-color: #f8f3e9;
+  transition: bottom 1s; }
   footer p {
     color: rgba(124, 121, 116, 0.6); }
   footer ul {
@@ -159,7 +158,6 @@ footer {
   top: 100%;
   left: 0;
   right: 0;
-  min-height: 2000px;
   z-index: 2; }
 
 .parallax__layer__0 {
@@ -187,7 +185,7 @@ footer {
   border-bottom: none; }
 
 .btn {
-  outline: 0;
+  margin-bottom: 1em;
   margin-left: 2px;
   border-radius: 8px;
   border-bottom-right-radius: 0px;
@@ -215,7 +213,7 @@ footer {
   border-radius: 50%;
   position: fixed;
   bottom: 60px;
-  right: 60px;
+  right: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +224,7 @@ footer {
   z-index: 100;
   text-decoration: none;
   user-select: none;
-  transition: opacity 1s; }
+  transition: all 1s; }
   .button_return:hover {
     border: 2px solid black;
     color: #ff4240;
@@ -237,9 +235,9 @@ footer {
     outline: none;
     box-shadow: none; }
 
-@media (max-width: 991px) {
-  .nav-link {
-    text-align: center; } }
+#contact {
+  margin-bottom: 75px; }
+
 @media (max-width: 590px) {
   footer {
     justify-content: space-around; }
@@ -247,8 +245,6 @@ footer {
       line-height: 40px; }
     footer ul {
       justify-content: space-around; }
-      footer ul:nth-child(2) {
-        margin: 0; }
       footer ul li {
         margin: 10px; } }
 
