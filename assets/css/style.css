@@ -78,14 +78,15 @@ nav {
     height: 450px;
     object-fit: cover; }
   #photographies #carousel #previous, #photographies #carousel #next {
+    border: none;
     border-radius: 50%;
     width: 33px;
     height: 33px;
     background-color: transparent;
     font-size: 1.5em;
-    border: none; }
+    color: white; }
     #photographies #carousel #previous:hover, #photographies #carousel #next:hover {
-      color: red; }
+      color: #ff4240; }
     #photographies #carousel #previous:focus, #photographies #carousel #next:focus {
       outline: none;
       box-shadow: none; }
@@ -220,15 +221,15 @@ footer {
   width: 30px;
   height: 30px;
   color: white;
-  background-color: black;
+  background-color: #0d2d7a;
   z-index: 100;
   text-decoration: none;
   user-select: none;
   transition: all 1s; }
   .button_return:hover {
-    border: 2px solid black;
-    color: #ff4240;
-    background-color: white; }
+    border: 2px solid white;
+    color: #0d2d7a;
+    background-color: #ff4240; }
   .button_return:focus {
     text-decoration: inherit;
     user-select: inherit;

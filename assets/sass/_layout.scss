@@ -60,15 +60,16 @@ nav
 		}
 		#previous, #next
 		{
+			border: none;
 			border-radius: 50%;
 			width: 33px;
 			height: 33px;
 			background-color: transparent;
 			font-size: 1.5em;
-			border: none;
+			color: white;
 			&:hover
 			{
-				color: red;
+				color: #ff4240;
 			}
 			&:focus
 			{
@@ -248,16 +249,16 @@ footer
 	width: 30px;
 	height: 30px;
 	color: white;
-	background-color: black;
+	background-color: #0d2d7a;
 	z-index: 100;
 	text-decoration: none;
 	user-select : none;
 	transition: all 1s;
 	&:hover
 	{	
-		border: 2px solid black;
-		color: #ff4240;
-		background-color: white;
+		border: 2px solid white;
+		color: #0d2d7a;
+		background-color: #ff4240;
 	}
 	&:focus      
 	{
