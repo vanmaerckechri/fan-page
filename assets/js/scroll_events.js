@@ -16,8 +16,13 @@ returnToTopContainer.appendChild(returnToTopElement);
 document.body.appendChild(returnToTopContainer);
 returnToTopContainer.classList.add('button_return');
 
+// click bouton retour top
+returnToTopContainer.addEventListener('click', backToTop);
+// transition transparente de la nav et de la fleche retour top
 window.mainFocus.addEventListener('scroll', changeDisplayNav);
 window.addEventListener("resize", changeDisplayNav);
+// regle le bug en bas de page sur firexfox lors du resizing de la fenetre
+window.addEventListener("resize", backToTop);
 
 function changeDisplayNav(first)
 {	
@@ -42,24 +47,24 @@ function changeDisplayNav(first)
 		returnToTopContainer.style.opacity = "0";
 		returnToTopContainer.style.pointerEvents = "none";	
 	}
-	if (positionScrollNow + windowHeight == heightTotal)
+	if (positionScrollNow + windowHeight > heightTotal - 25)
 	{
 		footerFocus.style.bottom = "0";
-		contactFocus.style.marginBottom = footerBounding.height+4+"px";
-		returnToTopContainer.style.bottom = footerBounding.height+4+"px";
+		contactFocus.style.marginBottom = footerBounding.height + 4 + "px";
+		returnToTopContainer.style.bottom = footerBounding.height + 4 + "px";
 	}
 	else
 	{
-		footerFocus.style.bottom = -1*footerBounding.height+"px";
+		footerFocus.style.bottom = -1 * footerBounding.height+"px";
 	}
 }
 // smooth scroll
-returnToTopContainer.addEventListener('click', function()
+function backToTop()
 {
 	window.mainFocus.scroll({
   	top: 0, 
   	left: 0, 
   	behavior: 'smooth' 
 	});
-});
+}
 window.onload = changeDisplayNav();

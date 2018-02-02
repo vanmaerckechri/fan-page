@@ -83,7 +83,7 @@ footer
 { 
 	padding-left: 30px;
 	padding-right: 30px;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -94,7 +94,6 @@ footer
 	flex-wrap: wrap;
 	background-color: rgb(248, 243, 233);
 	transition: bottom 1s;
-
 	p
 	{
 		color: $footer-color;
@@ -156,7 +155,7 @@ footer
 	bottom: 0;
 	left: 0;
 }
- .parallax__layer img
+.parallax__layer img
  {
     display: block;
     position: absolute;
