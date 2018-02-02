@@ -47,11 +47,11 @@ function changeDisplayNav(first)
 		returnToTopContainer.style.opacity = "0";
 		returnToTopContainer.style.pointerEvents = "none";	
 	}
-	if (positionScrollNow + windowHeight > heightTotal - 25)
+	if (positionScrollNow + windowHeight > heightTotal - 10)
 	{
 		footerFocus.style.bottom = "0";
-		contactFocus.style.marginBottom = footerBounding.height + 4 + "px";
-		returnToTopContainer.style.bottom = footerBounding.height + 4 + "px";
+		contactFocus.style.marginBottom = footerBounding.height + 10 + "px";
+		returnToTopContainer.style.bottom = footerBounding.height + 10 + "px";
 	}
 	else
 	{
