@@ -143,14 +143,11 @@ footer
 	left: 0;
 	right: 0;
 	bottom: 0;
-	img
-	{
-		width: 100%;
-	}
 }
 .parallax__layer
 {
 	position: absolute;
+	width: 100%;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -158,23 +155,23 @@ footer
 }
 .parallax__layer img
  {
+ 	margin: 0 auto;
     display: block;
     position: absolute;
+    width: 2000px;
     bottom: 0;
+    left: 50%;
+    margin-left: -1000px;
 }
 .parallax__cover
 {
-	background: #2D112B;
+	background: #101a31;
 	display: block;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	right: 0;
 	z-index: 2;
-}
-.parallax__layer__0
-{
-  	transform: translateZ(-300px) scale(4);
 }
 .parallax__layer__1
 {
@@ -200,6 +197,10 @@ footer
 {
   	transform: translateZ(0px) scale(1);
 }
+.parallax__layer__7
+{
+  	transform: translateZ(0px) scale(1);
+}
 //onglets
 .nav-tabs
 {
@@ -218,9 +219,9 @@ footer
 	&:hover
 	{
 		border: 1px solid white;
-		border-bottom: 1px solid #2D112B;
+		border-bottom: 1px solid #101a31;
 		color: white;
-		background-color: #2D112B;
+		background-color: #101a31;
 	}
 	&:focus
 	{
@@ -231,9 +232,9 @@ footer
 .activeOnglet
 {
 	border: 1px solid white;
-	border-bottom: 1px solid #2D112B;
+	border-bottom: 1px solid #101a31;
 	color: white;
-	background-color: #2D112B;
+	background-color: #101a31;
 }
 //return top button
 .button_return
