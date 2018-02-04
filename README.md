@@ -1,9 +1,5 @@
 # Fan Page (en dév.)
 
-## Apperçu
-
-![Photographie de l'équipe Jaqueline et les Garçons](https://vanmaerckechri.github.io/exercice-9-team-presentation/assets/images/team.jpg)
-
 ## Les Collègues
 
 * [Marine](https://github.com/MaSclA)
