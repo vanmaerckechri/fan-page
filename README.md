@@ -15,6 +15,6 @@
   * Intégrer une galerie d'images à l'aide de Jquery ou Javascript.
   * etc.
 
-## Contexte
+## Le Contexte
 
 Réalisé durant la formation [Becode](http://www.becode.org/) - 2018/02.
