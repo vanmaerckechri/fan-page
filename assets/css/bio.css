@@ -10,7 +10,7 @@
   display: block;
   height: 1em;
   width: 100%;
-  background-color: #4682B4;
+  background-color: #9FC6DF;
   }
   
 .accordion dd,
@@ -26,20 +26,20 @@
   
 .accordion {
   position:relative;
-  background-color: #ADD8E6;
+  background-color: #9FA8BD;
 }
 
 .accordionTitle,
 .accordion__Heading {
-  background-color:	#4682B4; 
+  background-color:	#9FC6DF; 
   text-align: center;
   font-weight: 700; 
   padding: 2em;
   display: block;
   text-decoration: none;
-  color: #C2A425;
+  color: #101832;
   transition: background 0.5s ease-in-out;
-  border-bottom: 1px solid #B0E0E6;
+  border-bottom: 1px solid #9FA8BD;
 }
 .accordionTitle:before,
 .accordion__Heading:before {
@@ -51,13 +51,14 @@
 }
 .accordionTitle:hover, 
 .accordion__Heading:hover {
-  background-color:#B0E0E6;
-  color: #F40000;
+  background-color:#4259BD;
+  color: #C2A425;
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black;
   text-decoration: none;
 }
 .accordionTitleActive, 
 .accordionTitle.is-expanded {
-  background-color:#B0E0E6;
+  background-color:#4259BD;
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
