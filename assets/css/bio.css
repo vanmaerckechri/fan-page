@@ -1,0 +1,85 @@
+
+
+
+
+.accordion dl {
+  border: 1px solid black;
+}
+.accordion dl:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  background-color: #4682B4;
+  }
+  
+.accordion dd,
+.accordion__panel {
+  background-color: white;
+  font-size:1em;
+  line-height:1em; 
+}
+.accordion p {
+  padding:1em 2em 1em 2em;
+  color: black;
+}
+  
+.accordion {
+  position:relative;
+  background-color: #ADD8E6;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  background-color:	#4682B4; 
+  text-align: center;
+  font-weight: 700; 
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #C2A425;
+  transition: background 0.5s ease-in-out;
+  border-bottom: 1px solid #B0E0E6;
+}
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size:1.5em;
+  line-height:0.5em;
+  float:left; 
+  transition: transform 0.3s ease-in-out;
+}
+.accordionTitle:hover, 
+.accordion__Heading:hover {
+  background-color:#B0E0E6;
+  color: #F40000;
+  text-decoration: none;
+}
+.accordionTitleActive, 
+.accordionTitle.is-expanded {
+  background-color:#B0E0E6;
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  transform:rotate(-225deg);
+}
+
+.accordionItem {
+  height:auto;
+  overflow:hidden; 
+  max-height:100em;
+  transition: 1s;   
+}
+      
+  @media screen and (min-width:48em) {
+        max-height:15em;
+      transition:max-height 0.5s
+      
+  }
+
+.accordionItem.is-collapsed {
+  max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
