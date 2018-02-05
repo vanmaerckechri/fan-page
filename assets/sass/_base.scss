@@ -8,10 +8,11 @@ body
 }
 header
 {
+	position: fixed;
 	transition: opacity .5s;
 	background-color: #F8F9FA;
 	z-index: 10;
-	transform: translateZ(0px) scale(1);
+	transform: translateZ(10px) scale(1);
 }
 #main
 {

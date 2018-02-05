@@ -4,7 +4,7 @@ nav
 {
 	margin: 0 auto;
 	max-width: 960px;
-		transition: opacity .5s;
+	transition: opacity .5s;
 
 	z-index: 10;
 	ul
@@ -64,6 +64,8 @@ nav
 		align-items: center;
 		#carousel_img
 		{
+			border: 1px solid white;
+			border-radius: 8px;
 			max-width: 80%;
 			height: 450px;
 			object-fit: cover;
