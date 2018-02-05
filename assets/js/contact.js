@@ -6,6 +6,7 @@ var mailId = document.querySelector('#mail');
 var warning_mailId = document.querySelector('#warning_mail');
 var textAreaId = document.querySelector('#textarea');
 var warning_textAreaId = document.querySelector('#warning_textArea');
+var warning_validationId = document.querySelector('#warning_validation');
 var sendContactId = document.querySelector('#sendContact');
 
 function checkIfOnlyLetters(input)
@@ -121,6 +122,13 @@ function displayWarnings(firstName, lastName, mail, textArea)
 		nomId.style.border = 'none';
 		mailId.style.border = 'none';
 		textAreaId.style.border = 'none';
+		warning_validationId.innerHTML = " | Merci, votre message nous a bien été envoyé.";
+;		warning_validationId.style.color = "green";
+		let validationContactWarning = setTimeout(function()
+		{
+			warning_validationId.innerHTML = "";
+			clearTimeout(validationContactWarning);
+		}, 5000);
 	}
 }
 
