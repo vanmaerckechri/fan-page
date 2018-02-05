@@ -253,10 +253,13 @@
                     <form class="alinea">
                         <label for="prenom">Prénom : </label>
                         <input id="prenom" type="text" class="form-control">
+                        <div id="warning_prenom"></div>
                         <label for="nom">Nom : </label>
                         <input id="nom" type="text" class="form-control">
+                        <div id="warning_nom"></div>
                         <label for="mail">Mail : </label>
                         <input id="mail" type="email" class="form-control">
+                        <div id="warning_mail"></div>
                         <label for="select">Thème : </label>
                         <select id="select" class="form-control">
                             <option>Thème 1</option>
@@ -265,8 +268,9 @@
                         </select>
                         <label for="textarea">Textarea : </label>
                         <textarea id="textarea" type="textarea" class="form-control"></textarea>
+                        <div id="warning_textArea"></div>
                         <br>
-                        <button><span class="glyphicon glyphicon-upload"></span> Envoyer</button>
+                        <button id="sendContact">Envoyer</button>
                     </form>
             	</div>
             </div>
@@ -289,5 +293,6 @@
     <script src="assets/js/onglets.js"></script>
     <script src="assets/js/scroll_events.js"></script>
     <script src="assets/js/bio.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
