@@ -65,7 +65,7 @@ function displayWarnings(firstName, lastName, mail, textArea)
 {
 	if (firstName == false)
 	{
-		warning_prenomId.innerHTML = "Prénom Invalide. Le nom doit être composé d'au moins 3 LETTRES!";
+		warning_prenomId.innerHTML = "Prénom Invalide! Celui-ci doit être composé d'au moins 3 LETTRES...";
 		warning_prenomId.style.color = "red";
 		prenomId.style.border = '4px solid red';
 	}
@@ -76,7 +76,7 @@ function displayWarnings(firstName, lastName, mail, textArea)
 	}
 	if (lastName == false)
 	{
-		warning_nomId.innerHTML = "Nom Invalide. Le nom doit être composé d'au moins 3 LETTRES!";
+		warning_nomId.innerHTML = "Nom Invalide! Celui-ci doit être composé d'au moins 3 LETTRES...";
 		warning_nomId.style.color = "red";
 		nomId.style.border = '4px solid red';
 	}
