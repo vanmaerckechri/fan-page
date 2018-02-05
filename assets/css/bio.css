@@ -16,7 +16,7 @@
   font-size:1em;
 }
 .accordion p {
-  padding:1em 2em 1em 2em;
+  padding: 1em 2em 1em 2em;
   color: black;
 }
   
@@ -64,7 +64,6 @@
 .accordionItem {
   height:auto;
   overflow:hidden; 
-  max-height:100em;
   transition: 1s;   
 }
       
