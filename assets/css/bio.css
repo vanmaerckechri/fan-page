@@ -1,23 +1,19 @@
-
-
-
-
 .accordion dl {
   border: 1px solid black;
 }
 .accordion dl:after {
   content: "";
   display: block;
-  height: 1em;
   width: 100%;
   background-color: #9FC6DF;
   }
   
 .accordion dd,
 .accordion__panel {
-  background-color: white;
+  margin-bottom: 2px;
+  background-color: #A6C6DD;
+  color: white;
   font-size:1em;
-  line-height:1em; 
 }
 .accordion p {
   padding:1em 2em 1em 2em;
@@ -26,15 +22,15 @@
   
 .accordion {
   position:relative;
-  background-color: #9FA8BD;
+  background-color: #E2A91B;
 }
 
 .accordionTitle,
 .accordion__Heading {
-  background-color:	#9FC6DF; 
+  background-color:	#F8F3E9 ; 
   text-align: center;
   font-weight: 700; 
-  padding: 2em;
+  padding: 1em;
   display: block;
   text-decoration: none;
   color: #101832;
@@ -43,26 +39,26 @@
 }
 .accordionTitle:before,
 .accordion__Heading:before {
-  content: "+";
-  font-size:1.5em;
-  line-height:0.5em;
-  float:left; 
+  content: url(../img/shield.png);
+  margin-top: -16px;
+  position: absolute;
+  left: 8px;
   transition: transform 0.3s ease-in-out;
 }
 .accordionTitle:hover, 
 .accordion__Heading:hover {
-  background-color:#4259BD;
-  color: #C2A425;
-  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black;
+  color: #a60000;
   text-decoration: none;
 }
 .accordionTitleActive, 
 .accordionTitle.is-expanded {
-  background-color:#4259BD;
+  background-color: #0D2D7A;
+  color: white;
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black;
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
-  transform:rotate(-225deg);
+  transform:rotate(-450deg);
 }
 
 .accordionItem {
