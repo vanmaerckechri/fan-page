@@ -47,7 +47,7 @@ function checkTextArea(input)
 	let inputCaracNumber = input.length;
 	for (let i = 0; i < inputCaracNumber; i++)
 	{
-		if (input[i] == "<" || input[i] == ">" || inputCaracNumber < 5)//si l'input est composé de "<" ou ">" ce qui permet des injections...
+		if (input[i] == "<" || input[i] == ">" || input[i] == ";" || input[i] == "\"" || input[i] == "\'" || inputCaracNumber < 5)//si l'input est composé de < > ; " ' ce qui permet des injections... ou qu'il y a moins de 5 caractères...
 		{
 			return false;
 		}
@@ -99,7 +99,7 @@ function displayWarnings(firstName, lastName, mail, textArea)
 	}
 	if (textArea == false)
 	{
-		warning_textAreaId.innerHTML = "Cette zone de texte doit contenir au moins 5 caractères et n'accepte pas les symboles suivants: '<' et '>'... ";
+		warning_textAreaId.innerHTML = "Cette zone de texte doit contenir au moins 5 caractères et n'accepte pas les symboles suivants: < > ; ' \"... ";
 		warning_textAreaId.style.color = "red";
 		textAreaId.style.border = '4px solid red';
 	}
