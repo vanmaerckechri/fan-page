@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/goodies.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Cabin:400,500,700" rel="stylesheet">  
+    <title>Wooder Woman</title>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="index.html" class="go-back">
+            <i class="fas  fa-arrow-left"></i>
+            <p>Go back to Wonder Woman Fan page</p>
+        </a>
+    </div>
+</nav>
+<header>
+    <div class="hero">
+        <h1>Wonder Woman Goodies Shop</h1>
+    </div>
+</header>
+
+<main>
+    <section class="shop">
+        <div class="container shop-grid">
+            <div class="shop-cart">
+                <span id="total"></span>
+                <div class="shop-cart-btn" onclick="displayCart(this)">
+                    <span>Shopping cart</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>  
+            </div>          
+            <div class="row">
+                <div class="card-group">
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id ="shopModal" class="shop-modal">
+        <div class=shop-modal-wrapper id="shopModalWrapper">
+            <div class="modal-close" id="modalClose" onclick="closeModal(this)"><i class="far fa-2x fa-times-circle"></i></div>
+            <h2>Votre panier</h2>
+            <div class="shop-modal-container-items" id ="shopModalItemContainer">    
+                <h4 id="panierVide">Votre panier est vide :(</h4>
+            </div>
+            <p class="total-commande">Total de la commande: <span id="totalShopModal"></span> Euros.</p>
+            <p>Frais de livraison: <span id="fraisLivraison"></span> euros</p>
+        </div>  
+    </section>
+</main>
+<footer>
+
+</footer>
+<script src="assets/js/fontawesome-all.js"></script>
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/goodies.js"></script>
+</body>
+</html>
