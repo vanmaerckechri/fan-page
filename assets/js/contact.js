@@ -99,7 +99,7 @@ function displayWarnings(firstName, lastName, mail, textArea)
 	}
 	if (textArea == false)
 	{
-		warning_textAreaId.innerHTML = "Cette zone de texte doit contenir au moins 5 caractères et n'accepte pas les symboles suivants: < > ; ' \"... ";
+		warning_textAreaId.innerHTML = "Cette zone de texte doit contenir au moins 5 caractères et n'accepte pas les symboles suivants: < > ; ' \"";
 		warning_textAreaId.style.color = "red";
 		textAreaId.style.border = '4px solid red';
 	}
