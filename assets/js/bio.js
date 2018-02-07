@@ -1,17 +1,23 @@
+var toucMove = false;
 (function()
 {
 	var d = document,
 	accordionToggles = d.querySelectorAll('.js-accordion'),
 	setAria,
 	setAccordionAria,
-	switchAccordion,
-  	touchSupported = ('ontouchstart' in window),
-  	pointerSupported = ('pointerdown' in window);
+	switchAccordion;
+function isTouchDevice() {
+    return 'ontouchstart' in document.documentElement;
+}
+
   
  	skipClickDelay = function(e)
     {
-    	e.target.click();
-    }
+    	if (toucMove == false)
+    	{
+    		switchAccordion(e);
+    	}
+    };
 
 	setAriaAttr = function(el, ariaType, newProperty)
 	{
@@ -56,14 +62,25 @@
 	};
 	for (var i = 0, len = accordionToggles.length; i < len; i++)
 	{
-		if(touchSupported)
+		if(isTouchDevice())
 		{
-      		accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+      		accordionToggles[i].addEventListener('touchend', skipClickDelay, false);
     	}
-    	if(pointerSupported)
+    	else
     	{
-      		accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    		accordionToggles[i].addEventListener('click', switchAccordion, false);
     	}
-    accordionToggles[i].addEventListener('click', switchAccordion, false);
   	}
 })();
+
+function detectTouchmove()
+{
+ toucMove = true;
+}
+function detectTouchmoveEnd()
+{
+ toucMove = false;
+}
+
+document.addEventListener('touchmove', detectTouchmove, false)
+document.addEventListener('touchend', detectTouchmoveEnd, false)
