@@ -43,7 +43,8 @@ function isTouchDevice() {
     
 	//function
 	switchAccordion = function(e)
-	{
+	{    
+		e.preventDefault();
 		var thisAnswer = e.target.parentNode.nextElementSibling;
 		var thisQuestion = e.target;
 		if(thisAnswer.classList.contains('is-collapsed'))
