@@ -7,6 +7,8 @@ var returnToTopElement;
 // var footer
 var footerFocus = document.querySelector('footer');
 var contactFocus = document.querySelector('#contact');
+//regler le probleme en bas de page qui garde la hauteur de la page lorsqu'on en augmente la largeur
+var parallaxId = document.querySelector('.parallax');
 // create and insert return top
 returnToTopContainer = document.createElement("button");
 returnToTopContainer.className = 'button_return';
@@ -22,7 +24,7 @@ returnToTopContainer.addEventListener('click', backToTop);
 window.mainFocus.addEventListener('scroll', changeDisplayNav);
 window.addEventListener("resize", changeDisplayNav);
 // regle le bug en bas de page sur firexfox lors du resizing de la fenetre
-window.addEventListener("resize", backToTop);
+//window.addEventListener("resize", backToTop);
 
 function changeDisplayNav(first)
 {	
@@ -52,10 +54,12 @@ function changeDisplayNav(first)
 		footerFocus.style.bottom = "0";
 		contactFocus.style.marginBottom = footerBounding.height + 10 + "px";
 		returnToTopContainer.style.bottom = footerBounding.height + 10 + "px";
+		parallaxId.style.perspective = "none";
 	}
 	else
 	{
 		footerFocus.style.bottom = -1 * footerBounding.height+"px";
+		parallaxId.style.perspective = "100px";
 	}
 }
 // smooth scroll

@@ -109,7 +109,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   background-color: #f8f3e9;
-  transition: bottom 1s; }
+  transition: bottom 1s;
+  z-index: 10; }
   footer p {
     color: rgba(124, 121, 116, 0.6); }
   footer ul {
