@@ -30,7 +30,7 @@
   background-color:	#F8F3E9 ; 
   text-align: center;
   font-weight: 700; 
-  padding: 1em 2px 1em 52px;
+  padding: 20px;
   display: block;
   text-decoration: none;
   color: #101832;
@@ -40,9 +40,9 @@
 .accordionTitle:before,
 .accordion__Heading:before {
   content: url(../img/shield.png);
-  margin-top: -16px;
+  margin-top: -15px;
   position: absolute;
-  left: 8px;
+  left: 10px;
   transition: transform 0.3s ease-in-out;
 }
 .accordionTitle:hover, 
@@ -78,4 +78,23 @@
 }
 .no-js .accordionItem.is-collapsed {
   max-height: auto;
+}
+@media (max-width: 510px)
+{
+    .accordionTitle,
+    .accordion__Heading
+    {
+      padding: 10px;
+      display: flex;
+      flex-direction : column;
+      justify-content: center;
+      align-items: center;
+    }
+    .accordionTitle:before,
+    .accordion__Heading:before
+    {
+        margin: 0;
+        left: 0;
+        position: static;
+    }
 }
