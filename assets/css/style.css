@@ -101,7 +101,7 @@ footer {
   padding-left: 30px;
   padding-right: 30px;
   position: fixed;
-  bottom: 0;
+  bottom: -120px;
   left: 0;
   width: 100%;
   min-height: 57px;
@@ -233,6 +233,7 @@ footer {
   color: white;
   background-color: #0d2d7a;
   z-index: 100;
+  opacity: 0;
   text-decoration: none;
   user-select: none;
   transition: all 1s; }
