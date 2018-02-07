@@ -18,14 +18,6 @@ returnToTopContainer.appendChild(returnToTopElement);
 document.body.appendChild(returnToTopContainer);
 returnToTopContainer.classList.add('button_return');
 
-// click bouton retour top
-returnToTopContainer.addEventListener('click', backToTop);
-// transition transparente de la nav et de la fleche retour top
-window.mainFocus.addEventListener('scroll', changeDisplayNav);
-window.addEventListener("resize", changeDisplayNav);
-// regle le bug en bas de page sur firexfox lors du resizing de la fenetre
-//window.addEventListener("resize", backToTop);
-
 function changeDisplayNav(first)
 {	
 	let windowHeight = window.innerHeight;
@@ -71,4 +63,11 @@ function backToTop()
   	behavior: 'smooth' 
 	});
 }
+
+// click bouton retour top
+returnToTopContainer.addEventListener('click', backToTop);
+// transition transparente de la nav et de la fleche retour top
+window.mainFocus.addEventListener('scroll', changeDisplayNav);
+window.addEventListener("resize", changeDisplayNav);
+
 window.onload = changeDisplayNav();
