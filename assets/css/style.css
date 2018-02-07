@@ -62,7 +62,8 @@ nav {
 
 #rubriques {
   margin: 0 auto;
-  max-width: 960px; }
+  max-width: 960px;
+  z-index: 100; }
 
 #photographies img {
   max-width: 100%;
