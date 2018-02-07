@@ -59,7 +59,7 @@
 	{
 		if(touchSupported)
 		{
-      		accordionToggles[i].addEventListener('touchstart', skipClickDelay, {passive: true});
+      		accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
     	}
     	if(pointerSupported)
     	{
