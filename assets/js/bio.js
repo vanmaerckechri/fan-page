@@ -10,7 +10,8 @@
   
  	skipClickDelay = function(e)
     {
-	    e.target.click();
+    	e.preventDefault();
+    	e.focus.click();
     }
 
 	setAriaAttr = function(el, ariaType, newProperty)
@@ -55,7 +56,7 @@
 		thisAnswer.classList.toggle('is-expanded');
 	  	thisAnswer.classList.toggle('animateIn');
 	};
-	for (var i=0,len=accordionToggles.length; i<len; i++)
+	for (var i = 0, len = accordionToggles.length; i < len; i++)
 	{
 		if(touchSupported)
 		{
