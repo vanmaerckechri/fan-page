@@ -50,7 +50,7 @@ switchAccordion = function(e) {
 	};
 	for (var i=0,len=accordionToggles.length; i<len; i++) {
 		if(touchSupported) {
-      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, {passive: true});
     }
     if(pointerSupported){
       accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);

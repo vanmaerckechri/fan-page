@@ -279,3 +279,16 @@ footer
 {
 	margin-bottom: 75px;
 }
+//liens wikipedia
+small
+{
+	a
+	{
+		color: #A0A9BC;
+		&:hover
+		{
+			color: #E60000;
+			text-decoration: none;
+		}
+	}
+}

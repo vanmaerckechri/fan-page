@@ -248,6 +248,12 @@ footer {
 #contact {
   margin-bottom: 75px; }
 
+small a {
+  color: #A0A9BC; }
+  small a:hover {
+    color: #E60000;
+    text-decoration: none; }
+
 @media (max-width: 590px) {
   footer {
     justify-content: space-around; }

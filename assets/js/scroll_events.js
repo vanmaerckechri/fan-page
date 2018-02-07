@@ -12,6 +12,7 @@ var parallaxId = document.querySelector('.parallax');
 // create and insert return top
 returnToTopContainer = document.createElement("button");
 returnToTopContainer.className = 'button_return';
+returnToTopContainer.setAttribute("aria-label", "retour haut de page");
 returnToTopElement = document.createElement("i");
 returnToTopElement.className = 'fa fa-arrow-up';
 returnToTopContainer.appendChild(returnToTopElement);
