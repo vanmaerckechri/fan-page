@@ -10,8 +10,7 @@
   
  	skipClickDelay = function(e)
     {
-    	e.preventDefault();
-    	e.focus.click();
+    	e.target.click();
     }
 
 	setAriaAttr = function(el, ariaType, newProperty)
@@ -39,7 +38,6 @@
 	//function
 	switchAccordion = function(e)
 	{
-		e.preventDefault();
 		var thisAnswer = e.target.parentNode.nextElementSibling;
 		var thisQuestion = e.target;
 		if(thisAnswer.classList.contains('is-collapsed'))
@@ -58,11 +56,11 @@
 	};
 	for (var i = 0, len = accordionToggles.length; i < len; i++)
 	{
-		if(d.touchSupported)
+		if(touchSupported)
 		{
       		accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
     	}
-    	if(d.pointerSupported)
+    	if(pointerSupported)
     	{
       		accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
     	}
