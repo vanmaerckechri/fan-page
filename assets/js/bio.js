@@ -58,11 +58,11 @@
 	};
 	for (var i = 0, len = accordionToggles.length; i < len; i++)
 	{
-		if(touchSupported)
+		if(d.touchSupported)
 		{
       		accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
     	}
-    	if(pointerSupported)
+    	if(d.pointerSupported)
     	{
       		accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
     	}
