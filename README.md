@@ -1,4 +1,4 @@
-# Fan Page (en dév.)
+# Fan Page (1.0)
 
 ## Les Collègues
 
